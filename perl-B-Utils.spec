@@ -5,10 +5,10 @@
 %define	pdir	B
 %define	pnam	Utils
 Summary:	B::Utils - Helper functions for op tree manipulation
-#Summary(pl):	
+Summary(pl):	B::Utils - funkcje pomocnicze do obróbki drzewa op
 Name:		perl-B-Utils
 Version:	0.04
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 These functions make it easier to manipulate the op tree.
 
-# %description -l pl
-# TODO
+%description -l pl
+Te funkcje u³atwiaj± obrabianie drzewa op.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
