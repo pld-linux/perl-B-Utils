@@ -28,7 +28,7 @@ Te funkcje u³atwiaj± obrabianie drzewa op.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
