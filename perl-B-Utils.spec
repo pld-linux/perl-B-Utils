@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	B
 %define	pnam	Utils
-Summary:	B::Utils - Helper functions for op tree manipulation
+Summary:	B::Utils - helper functions for op tree manipulation
 Summary(pl):	B::Utils - funkcje pomocnicze do obróbki drzewa op
 Name:		perl-B-Utils
 Version:	0.04
