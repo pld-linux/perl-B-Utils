@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	B
-%define	pnam	Utils
+%define		pdir	B
+%define		pnam	Utils
 Summary:	B::Utils - helper functions for op tree manipulation
 Summary(pl):	B::Utils - funkcje pomocnicze do obróbki drzewa op
 Name:		perl-B-Utils
