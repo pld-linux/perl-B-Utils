@@ -8,12 +8,12 @@ Summary:	B::Utils - Helper functions for op tree manipulation
 Summary(pl):	B::Utils - funkcje pomocnicze do obróbki drzewa op
 Name:		perl-B-Utils
 Version:	0.04
-Release:	3
+Release:	4
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 Conflicts:	perl-Module-Info
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
