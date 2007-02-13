@@ -6,7 +6,7 @@
 %define		pdir	B
 %define		pnam	Utils
 Summary:	B::Utils - helper functions for op tree manipulation
-Summary(pl.UTF-8):   B::Utils - funkcje pomocnicze do obróbki drzewa op
+Summary(pl.UTF-8):	B::Utils - funkcje pomocnicze do obróbki drzewa op
 Name:		perl-B-Utils
 Version:	0.05
 Release:	1
