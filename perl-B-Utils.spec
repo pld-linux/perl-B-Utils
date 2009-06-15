@@ -8,12 +8,12 @@
 Summary:	B::Utils - helper functions for op tree manipulation
 Summary(pl.UTF-8):	B::Utils - funkcje pomocnicze do obróbki drzewa op
 Name:		perl-B-Utils
-Version:	0.05
-Release:	2
+Version:	0.07
+Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	537cd17d2564e9d57c4c4d2bdd7a6f2d
+# Source0-md5:	d69e7d81a24093a41e90e19f8bdb54e3
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Conflicts:	perl-Module-Info
@@ -47,5 +47,14 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorlib}/%{pdir}/*.pm
+%dir %{perl_vendorarch}/B/Utils
+%dir %{perl_vendorarch}/B/Utils/Install
+%dir %{perl_vendorarch}/auto/B/Utils/
+%{perl_vendorarch}/B/Utils.pm
+%{perl_vendorarch}/B/Utils/Install/BUtils.h
+%{perl_vendorarch}/B/Utils/Install/Files.pm
+%{perl_vendorarch}/B/Utils/Install/typemap
+%{perl_vendorarch}/B/Utils/OP.pm
+%{perl_vendorarch}/auto/B/Utils/Utils.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/B/Utils/Utils.so
 %{_mandir}/man3/*
