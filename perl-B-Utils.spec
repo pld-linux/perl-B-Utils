@@ -6,25 +6,24 @@
 %define		pdir	B
 %define		pnam	Utils
 Summary:	B::Utils - helper functions for op tree manipulation
-Summary(pl.UTF-8):	B::Utils - funkcje pomocnicze do obróbki drzewa op
+Summary(pl.UTF-8):	B::Utils - funkcje pomocnicze do operacji na drzewie op
 Name:		perl-B-Utils
-Version:	0.08
-Release:	4
+Version:	0.13
+Release:	1
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	081c80bbee7c0b3313cf2656f58b953d
-BuildRequires:	perl(ExtUtils::Depends) >= 0.302
+Source0:	http://www.cpan.org/modules/by-module/B/JJORE/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	08cc7ef0bbdaaf1b0b83a3e2aea719fd
+BuildRequires:	perl-ExtUtils-Depends >= 0.302
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Conflicts:	perl-Module-Info
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 These functions make it easier to manipulate the op tree.
 
 %description -l pl.UTF-8
-Te funkcje ułatwiają obrabianie drzewa op.
+Te funkcje ułatwiają operacje na drzewie op.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -47,15 +46,15 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%{perl_vendorarch}/B/Utils.pm
 %dir %{perl_vendorarch}/B/Utils
 %dir %{perl_vendorarch}/B/Utils/Install
-%dir %{perl_vendorarch}/auto/B
-%dir %{perl_vendorarch}/auto/B/Utils/
-%{perl_vendorarch}/B/Utils.pm
 %{perl_vendorarch}/B/Utils/Install/BUtils.h
 %{perl_vendorarch}/B/Utils/Install/Files.pm
 %{perl_vendorarch}/B/Utils/Install/typemap
 %{perl_vendorarch}/B/Utils/OP.pm
+%dir %{perl_vendorarch}/auto/B
+%dir %{perl_vendorarch}/auto/B/Utils
 %{perl_vendorarch}/auto/B/Utils/Utils.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/B/Utils/Utils.so
-%{_mandir}/man3/*
+%{_mandir}/man3/B::Utils*.3pm*
