@@ -55,6 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/B/Utils/OP.pm
 %dir %{perl_vendorarch}/auto/B
 %dir %{perl_vendorarch}/auto/B/Utils
-%{perl_vendorarch}/auto/B/Utils/Utils.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/B/Utils/Utils.so
 %{_mandir}/man3/B::Utils*.3pm*
