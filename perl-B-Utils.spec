@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	B
 %define		pnam	Utils
+%include	/usr/lib/rpm/macros.perl
 Summary:	B::Utils - helper functions for op tree manipulation
 Summary(pl.UTF-8):	B::Utils - funkcje pomocnicze do operacji na drzewie op
 Name:		perl-B-Utils
@@ -14,6 +14,7 @@ License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/B/JJORE/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6dba6b4eb19143d94da6d0894602ce30
+URL:		http://search.cpan.org/dist/B-Utils/
 BuildRequires:	perl-ExtUtils-Depends >= 0.302
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
