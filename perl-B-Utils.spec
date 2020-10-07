@@ -13,10 +13,11 @@ License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/B/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	340d6461afcec016ce6d0a0ba27290ba
-URL:		http://search.cpan.org/dist/B-Utils/
+URL:		https://metacpan.org/release/B-Utils
 BuildRequires:	perl-ExtUtils-Depends >= 0.302
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
