@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 
 %define		pdir	B
 %define		pnam	Utils
@@ -13,7 +13,7 @@ License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/B/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	340d6461afcec016ce6d0a0ba27290ba
-URL:		https://metacpan.org/release/B-Utils
+URL:		https://metacpan.org/dist/B-Utils
 BuildRequires:	perl-ExtUtils-Depends >= 0.302
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
